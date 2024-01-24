@@ -1,0 +1,14 @@
+/* Numeric Value */
+    /* Warna hijau menggunakan format RGB */
+    p { color: rgb(78,231,23); }
+    
+    /* Warna hijau Menggunakan format HEX */
+    p { color: #4ee717; }
+    
+    /* Warna hijau menggunakan format HSL (hanya di CSS3)*/
+    p { color: hsl(104, 82%, 50%); }
+
+    /* Predefined Color Name */
+    p { color: black; }
+    p { color: white; }
+    p {color: blue; }
