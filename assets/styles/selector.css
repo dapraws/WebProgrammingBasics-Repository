@@ -1,0 +1,104 @@
+ /* Type Selector */
+    /* Semua elemen span */
+    span {
+        color: red;
+    }
+
+ /* Class Selector */
+    .fancy {
+        font-weight: bold;
+        text-shadow: 4px 4px 3px #77f;
+    }
+    
+    p.fancy {
+        text-shadow: 4px 4px 3px #00c8eb;
+    }
+
+  /* ID Selector */
+    #special {
+        background-color: skyblue;
+    }
+
+  /* Attribute Selector */
+    /* <a> element yang menerapkan href attribute */
+    a[href] { 
+        color: blue;
+    }
+    
+    /* <a> element yang menerapkan nilai pada href dengan awalan "#" */
+    a[href^='#'] {
+        background-color: gold;
+    }
+    
+    /* <a> element yang menerapkan nilai pada href yang mengandung teks "example" */
+    a[href*='example'] {
+        background-color: silver;
+    }
+    
+    /* <a> element yang menerapkan nilai pada href yang mengandung teks "insensitive" tidak mementingkan huruf kapital*/
+    a[href*='insensitive' i] {
+        color: cyan;
+    }
+    
+    /* <a> element yang menerapkan nilai pada href dengan akhiran ".org" */
+    a[href$='.org'] {
+        color: red;
+    }
+  /* Universal Selector */
+    /* Menargetkan seluruh tipe elemen */
+    * {
+        color: green;
+    }
+    
+    /* Menargetkan seluruh tipe elemen yang mengandung nilai "en" pada atribut lang */
+    *[lang^='en'] {
+        font-style: italic;
+    }
+    
+    /* Menargetkan seluruh tipe elemen yang memiliki nilai "warning" pada atribut class */
+    *.warning {
+        color: red;
+    }
+    
+    /* Menargetkan seluruh tipe elemen yang memiliki nilai "content" pada atribut id */
+    *#content {
+        border: 1px solid blue;
+        padding: 20px;
+    }
+
+  /* Pseudo Selector */
+    /* rule akan diterapkan pada sebuah tautan yang belum pernah dikunjungi */
+    a:link {
+        color: red;
+    }
+    
+    /* rule akan diterapkan pada sebuah tautan yang sudah pernah dikunjungi */
+    a:visited {
+        color: green;
+    }
+    
+    /* rule akan diterapkan pada sebuah tautan ketika diarahkan dengan kursor */
+    a:hover {
+        color: pink;
+    }
+    
+/* rule akan diterapkan pada sebuah tautan ketika ditekan */
+    a:active {
+        color:orange;
+    }
+
+    /* Pseudo-elemen Selector */
+    blockquote::before,
+    blockquote::after {
+    content: '"';
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    }
+
+    /* Rule styling akan diterapkan pada karakter pertama di sebuah paragraf */
+    p::first-letter {
+    font-size: 32px;
+    font-weight: bold;
+    color: saddlebrown;
+    }
