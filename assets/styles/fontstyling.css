@@ -1,0 +1,65 @@
+/* Font-family */
+  body {
+    font-family: sans-serif;
+  }
+
+  /* Memasukkan font eksternal */
+  @font-face {
+    font-family: "Dicoding Font";
+    src: url('FILE-FONT.TTF');
+  }
+
+  p {
+    font-family: "Dicoding Font";
+  }
+
+/* Font-size */
+  h1 {
+    font-size: 1.5em;
+  }
+
+  body {
+    font-size: 16px;
+  }
+   
+  h1 {
+    font-size: 150%; /* 150% dari 16 = 24px */
+  }
+
+  /* Rule tidak akan diterapkan pada target karena kesalahan penulisan nilai properti */
+  h1 {
+    font-size: 1.5 em;
+  }
+
+/* Font-weight */
+  .normal {
+    font-weight: normal;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+/* Font-style */
+  .normal {
+    font-style: normal;
+  }
+  
+  .italic {
+    font-style: italic;
+  }
+  
+  .oblique {
+    font-style: oblique;
+  }
+
+/* Font-variant */
+  h1 {
+    font-variant: small-caps;
+  }
+
+
+/* shorthand */
+  p {
+    font: 1em sans-serif;
+  }
