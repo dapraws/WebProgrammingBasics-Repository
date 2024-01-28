@@ -1,0 +1,24 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  main {
+    display: flex;
+  
+    flex-direction: column;
+  }
+  
+  main aside {
+    order: -1;
+  }
+  
+  /* CSS rule dalam block @media di bawah akan diterapkan jika ukuran viewport di atas 600px */
+  @media screen and (min-width: 400px) {
+    h1 {
+      color: red;
+    }
+  
+    h2 {
+      color: green;
+    }
+  }
