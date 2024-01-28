@@ -1,4 +1,4 @@
-# Dicoding Landing Page
+# Layout Responsif
 Membuat Dicoding Landing Page dengan Layout Responsif menggunakan Flexbox.
 
 ## Flexbox
@@ -54,6 +54,6 @@ Properti yang ditujukan pada flex item hanya akan berpengaruh pada flex item yan
 - flex-basis: memberikan ukuran default sebelum sisa ruang container didistribusikan kepada flex item.
 - align-self: mengatur posisi child element secara cross-axis.
 
-## Contoh Tampilan 
+## Screenshots 
 ![DicodingLandingPage](https://github.com/dapraws/WebProgrammingBasics-Repository/assets/122019775/f9f522a4-6b09-46d7-b134-dabebe10b893)
 ![DicodingLandingPage-mobile](https://github.com/dapraws/WebProgrammingBasics-Repository/assets/122019775/17f87f86-6a14-4467-a704-5224c6bded4d)
