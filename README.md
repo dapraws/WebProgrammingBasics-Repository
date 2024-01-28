@@ -1,5 +1,5 @@
 # Pendalaman HTML
-Membuat Halaman Web Profil Kota Bandung. Proyek latihan saya selama mempelajari Pendalaman HTML di Dicoding.
+Membuat Halaman Web Profil Kota Bandung. Proyek latihan saya selama mempelajari Pendalaman HTML di Dicoding. Belum menggunakan CSS.
 
 ## HTML
 HTML (Hypertext Markup Language) adalah bahasa markup yang digunakan untuk membangun struktur dasar halaman web.
