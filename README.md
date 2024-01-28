@@ -1,5 +1,5 @@
 # Pendalaman HTML
-Membuat Halaman Web Profil Kota Bandung. Proyek latihan saya selama mempelajari Pendalaman HTML di Dicoding. **Belum** menggunakan CSS.
+Membuat Halaman Web Profil Kota Bandung. Proyek latihan saya selama mempelajari Pendalaman HTML di Dicoding. 
 
 ## HTML
 HTML (Hypertext Markup Language) adalah bahasa markup yang digunakan untuk membangun struktur dasar halaman web.
@@ -48,4 +48,5 @@ Atribut menyediakan informasi tambahan tentang elemen HTML dan selalu dimasukkan
 - `alt`: Memberikan teks alternatif untuk gambar.
 
 ## Screenshots
+**Belum** menggunakan CSS.
 ![ProfilBandungHTML](https://github.com/dapraws/WebProgrammingBasics-Repository/assets/122019775/487fc509-dbb5-446f-8c30-a5d9f1da18ba)
