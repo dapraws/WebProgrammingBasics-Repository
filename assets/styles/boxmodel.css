@@ -1,0 +1,156 @@
+/* Box Element */
+* {
+    border: 1px solid red;
+  }
+
+  /* Box Dimensions */
+  .box {
+    height: 300px;
+    width: 300px;
+    background-color: #11c5c6;
+  }
+  
+  p {
+    height: 75%;
+    width: 75%;
+    background-color: #fbdd1c;
+  }
+
+  /* Limiting Dimension */
+  .content {
+    max-width: 800px;
+    height: 400px;
+  
+    margin-left: auto;
+    margin-right: auto;
+    background-color: deeppink;
+  }
+  
+  p {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  /* Overflowing Content */
+  div {
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+  }
+
+  /* Box-Sizing */
+  div {
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+    border: 10px solid cornflowerblue;
+    padding: 20px;
+  }
+  
+  .content {
+    box-sizing: content-box;
+  }
+  
+  .box {
+    box-sizing: border-box;
+  }
+
+  /* Border Width */
+  .box {
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 2px;
+  }
+
+  .box {
+    border-width: 2px 1px 1px 2px; /*top right bottom left*/
+  }
+
+  /* Border Style */
+  .box {
+    border-top-style: solid;
+    border-right-style: dotted;
+    border-bottom-style: groove;
+    border-left-style: double;
+  
+    border-width: 4px;
+    border-color: red;
+    width: 200px;
+    height: 50px;
+  }
+
+  /* Border Color */
+  /* menggunakan rgb format */
+  .box{
+    border-color: rgb(80, 138, 212);
+  }
+
+ 
+/* menggunakan format hex */
+.box{
+    border-color: #4ee717;
+}
+ 
+/* menggunakan nama warna */
+.box{
+    border-color: red;
+}
+.box {
+    border-color: #919191 #111111 #4ee717 #00c8eb;
+}
+
+/* Shorthand */
+.box {
+    border: 4px dashed #00a2c6;
+    width: 200px;
+  }
+
+/* Padding */
+p {
+    border: 4px solid #00a2c6;
+    width: 350px;
+}
+  
+p.example {
+    padding: 10px;
+}
+
+/* Margin */
+p {
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+/* Centering Content */
+.box {
+    width: 50%;
+    border: 4px solid darkblue;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .box.center {
+    margin: 0 auto;
+  }
+
+/* Shadow */
+.box {
+    width: 200px;
+    height: 200px;
+  
+    background-color: greenyellow;
+  
+    box-shadow: 6px 6px 5px 10px #666666;
+  }
+
+/* Rounded Corner */
+.rounded {
+    width: 300px;
+    padding: 20px;
+    border: 4px solid deeppink;
+  
+    border-radius: 10px;
+  }
