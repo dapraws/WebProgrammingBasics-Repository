@@ -16,6 +16,8 @@ Flexbox memberikan kita kontrol yang lebih baik dalam menyusun elemen-elemen di 
 **4. Penanganan Ukuran Dinamis:** Mengatasi situasi di mana elemen-elemen memiliki ukuran yang bervariasi dan tetap mempertahankan keseimbangan dalam tata letak.
 
 ## Terminologi
+![image](https://github.com/dapraws/WebProgrammingBasics-Repository/assets/122019775/3a9cfa07-9823-4cbc-9fa1-0fe1d21b6003)
+
 Beberapa terminologi yang umum digunakan dalam Flexbox:
 
 - Flex Container: Elemen yang menjadi wadah untuk elemen-elemen fleksibel. Didefinisikan dengan memberikan properti display: flex; atau display: inline-flex;.
