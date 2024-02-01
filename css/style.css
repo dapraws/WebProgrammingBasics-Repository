@@ -1,0 +1,889 @@
+html {
+   scroll-behavior: smooth;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+   list-style: none;
+   text-decoration: none;
+}
+
+header {
+   height: 100px;
+   position: fixed;
+   right: 0;
+   top: 0;
+   z-index: 1000;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 33px 9%;
+   background: white;
+}
+
+body {
+   background-color: black;
+   width: auto;
+}
+
+.logo {
+   font-family: 'Single Day', cursive;
+   font-size: 30px;
+   font-weight: 900;
+   color: black;
+}
+
+.logo span {
+   font-family: 'Single Day', cursive;
+   font-size: 30px;
+   color: black;
+   background-color: gold;
+   border-top-right-radius: 100px;
+   border-bottom-right-radius: 400px;
+   border-top-left-radius: 400px;
+   border-bottom-left-radius: 100px;
+   padding: 5px 20px;
+}
+
+.navlist {
+   display: flex;
+}
+
+.navlist a {
+   color: black;
+   font-weight: 900;
+   margin-left: 60px;
+   font-size: 20px;
+   font-family: 'Single Day', cursive;
+   border-radius: 50px;
+   transition: all .55s ease;
+   padding: 0.5rem 1.5rem;
+}
+
+.navlist a:hover {
+   color: gold;
+   border: 5px solid gold;
+   background-color: black;
+}
+
+#menu-icon {
+   padding-right: 20px;
+   color: black;
+   font-size: 25px;
+   z-index: 10001;
+   cursor: pointer;
+   display: none;
+}
+
+#hero {
+   height: 100%;
+   width: 100%;
+   min-height: 100vh;
+   min-width: 100vh;
+   background: gray;
+   position: relative;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   align-items: center;
+   gap: 2rem;
+}
+
+section {
+   padding: 0 10%;
+}
+
+.hero-text h3 {
+   font-size: 50px;
+}
+
+.hero-text h1 {
+   font-size: 100px;
+   font-family: 'Single Day', cursive;
+}
+
+.hero-text h1 span {
+   font-size: 100px;
+   font-family: 'Single Day', cursive;
+   background-color: gold;
+   border-top-right-radius: 100px;
+   border-bottom-right-radius: 400px;
+   border-top-left-radius: 400px;
+   border-bottom-left-radius: 100px;
+   padding: 5px 30px;
+}
+
+.hero-text p {
+   font-size: 20px;
+   font-weight: 700;
+   padding-bottom: 30px;
+}
+
+.hero-img img {
+   width: 700px;
+   height: auto;
+}
+
+.hero-text a {
+   display: inline-block;
+   color: gold;
+   background: black;
+   border: 5px solid gold;
+   border-radius: 50px;
+   padding: 12px 30px;
+   line-height: 1.4;
+   font-size: 30px;
+   font-weight: 500;
+   transition: all .55s ease;
+}
+
+.hero-text a i {
+   padding-left: 10px;
+}
+
+.hero-text a:hover {
+   color: white;
+   background: black;
+   border: 5px solid white;
+   transform: translateX(8px);
+}
+
+.socmed-icons {
+   position: absolute;
+   top: 50%;
+   padding: 0 4%;
+   transform: translateY(-50%);
+}
+
+.socmed-icons i {
+   display: block;
+   margin: 40px 0px;
+   font-size: 35px;
+   color: gold;
+   transition: all .50s ease;
+   text-align: center;
+   background-color: black;
+   padding: 12px 10px;
+   border-radius: 999px;
+}
+
+.socmed-icons i:hover {
+   color: white;
+   transform: translateY(-5px);
+}
+
+#toggleBtn {
+   position: fixed;
+   top: 50%;
+   right: 2%;
+   background-color: black;
+   color: gold;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 999px;
+   cursor: pointer;
+   font-size: 25px;
+   transition: all .50s ease;
+}
+
+#toggleBtn:hover {
+   transform: translateY(-10%);
+   color: white;
+}
+
+#profileCard {
+   width: 250px;
+   height: max-content;
+   position: fixed;
+   top: 120px;
+   right: -300px;
+   background-color: gold;
+   padding: 20px;
+   border: 4px solid black;
+   border-radius: 20px;
+   box-shadow: 5px 5px 20px black;
+   transition: right 0.3s;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#profileCard.hidden {
+   right: -300px;
+}
+
+#profileCard.shown {
+   right: 40px;
+}
+
+.avatar {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin-bottom: 20px;
+}
+
+.avatar img {
+   width: 100%;
+   height: 100%;
+}
+
+
+#profil-kucing {
+   height: 100%;
+   width: 100%;
+   min-width: 100vh;
+   padding-top: 100px;
+   /* min-height: 100vh; */
+   /* background: red; */
+   background: linear-gradient(180deg, rgba(128, 128, 128, 1) 0%, rgba(255, 255, 255, 1) 100%);
+   /* position: relative; */
+}
+
+.profile-kucing-wrapper {
+   /* background: blue; */
+   min-height: 100vh;
+}
+
+.profile-kucing-wrapper h2 {
+   padding-top: 50px;
+   font-size: 70px;
+   display: flex;
+   justify-content: center;
+   font-family: 'Single Day', cursive;
+   font-size: 100px;
+}
+
+.swiper {
+   display: flex;
+}
+
+.swiper-slide {
+   background: transparent;
+   margin: 50px;
+   border-radius: 5px;
+}
+
+.swiper-slide img {
+   height: auto;
+   width: 350px;
+   border-radius: 5px;
+   /* position: relative; */
+   box-shadow: 5px 5px 20px black;
+}
+
+.intro {
+   height: 90px;
+   width: 350px;
+   padding: 6px;
+   box-sizing: border-box;
+   bottom: 5px;
+   background: rgb(27, 27, 27, .5);
+   border-radius: 5px;
+   color: gold;
+   transition: .5s;
+   position: absolute;
+}
+
+.intro h1 {
+   margin: 10px;
+   font-size: 40px;
+}
+
+.intro p {
+   font-size: 17px;
+   margin: 10px;
+   visibility: hidden;
+   opacity: 0;
+}
+
+.intro span {
+   font-weight: bold;
+}
+
+.swiper-slide:hover {
+   cursor: pointer;
+}
+
+.swiper-slide:hover .intro {
+   height: 220px;
+   left: 8px;
+   bottom: -8px;
+   border-top-right-radius: 100px;
+   transform: scale(1.1) rotate(-3deg);
+}
+
+.swiper-slide:hover p {
+   opacity: 1;
+   visibility: visible;
+}
+
+.swiper-slide:hover img {
+   transform: scale(1.1) rotate(-3deg);
+}
+
+.swiper-pagination-bullet {
+   background-color: gold !important;
+}
+
+#cerita {
+   background: white;
+   display: flex;
+   flex-direction: column;
+   gap: 5rem;
+   padding-bottom: 4rem;
+   padding-top: 100px;
+   min-width: 100vh;
+}
+
+.cerita-wrapper h2 {
+   padding-top: 50px;
+   font-size: 70px;
+   display: flex;
+   justify-content: center;
+   font-family: 'Single Day', cursive;
+   font-size: 100px;
+}
+
+.cerita-1 {
+   margin-top: 50px;
+   height: 100%;
+   width: 100%;
+   min-height: 70vh;
+   background: gray;
+   border: 8px solid #333;
+   border-radius: 50px;
+   box-shadow: 5px 5px 20px black;
+   /* background: white; */
+   display: flex;
+   justify-content: space-between;
+}
+
+.cerita-2 {
+   /* background: gray; */
+   /* background: linear-gradient(0deg, rgba(128,128,128,1) 0%, rgba(255,255,255,1) 100%); */
+   min-height: 50vh;
+   display: flex;
+   flex-direction: row;
+   /* background-color: red; */
+   align-items: center;
+   justify-content: space-between;
+   padding-bottom: 30px;
+}
+
+.cerita-3 {
+   margin-top: 0px;
+   height: 100%;
+   width: 100%;
+   min-height: 70vh;
+   background: gray;
+   border: 8px solid #333;
+   border-radius: 50px;
+   box-shadow: 5px 5px 20px black;
+   /* background: white; */
+   display: flex;
+   justify-content: space-between;
+}
+
+.flex-item {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+}
+
+.cerita-2 img {
+   max-width: 50%;
+}
+
+.image {
+   max-width: 100%;
+   height: auto;
+   padding: 0px 25px;
+}
+
+.text {
+   padding: 0px 25px;
+}
+
+.text h2 {
+   font-size: 70px;
+}
+
+.cerita-2 h2 {
+   font-size: 40px;
+}
+
+
+
+#kontak {
+   min-width: 100vh;
+   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(128, 128, 128, 1) 20%);
+   padding: 100px 200px;
+   text-align: center;
+
+}
+
+#kontak h2 {
+   padding-top: 100px;
+   font-size: 5rem;
+   margin-bottom: 30px;
+   font-family: 'Single Day', cursive;
+}
+
+#kontak p {
+   font-size: 1.2rem;
+   margin-bottom: 50px;
+}
+
+#kontak form {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-bottom: 50px;
+}
+
+#kontak label {
+   display: block;
+   font-size: 1.3rem;
+   margin-bottom: 10px;
+   width: 100%;
+}
+
+#kontak input[type="text"],
+#kontak input[type="email"],
+#kontak textarea {
+   border: 1px solid gold;
+   border-radius: 5px;
+   font-size: 1.2rem;
+   padding: 10px;
+   width: 100%;
+}
+
+#kontak input[type="submit"] {
+   background-color: gold;
+   border: none;
+   border-radius: 5px;
+   color: black;
+   font-weight: bold;
+   font-size: 2rem;
+   font-family: 'Single Day', cursive;
+   padding: 10px 100px;
+   margin-top: 20px;
+   cursor: pointer;
+}
+
+#kontak input[type="submit"]:hover {
+   background-color: goldenrod;
+}
+
+
+
+
+
+
+
+footer {
+   min-width: 100vh;
+   background-color: #333;
+   color: #fff;
+   padding: 20px;
+   margin-top: 0px;
+}
+
+footer .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+footer p {
+   margin: 0;
+}
+
+footer ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+footer li {
+   margin: 0 10px;
+}
+
+footer a {
+   color: #fff;
+   text-decoration: none;
+}
+
+footer a:hover {
+   text-decoration: underline;
+}
+
+footer .social-media {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+footer .social-media a {
+   margin: 0 10px;
+   font-size: 2rem;
+   color: #fff;
+   transition: transform 0.2s;
+}
+
+footer .social-media a:hover {
+   transform: translateY(-5px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1535px) {
+
+   header {
+      padding: 15px 3%;
+      transition: .2s;
+   }
+
+   .icons {
+      padding: 0 3%;
+   }
+
+   footer .container {
+      flex-direction: column;
+   }
+
+   footer ul {
+      justify-content: flex-start;
+   }
+
+   footer .social-media {
+      justify-content: flex-end;
+   }
+
+   /* #hero {
+      width: max-content;
+   } */
+
+   .hero-text h3 {
+      font-size: 40px;
+   }
+
+   .hero-text h1 {
+      font-size: 60px;
+   }
+
+   .hero-text h1 span {
+      font-size: 70px;
+   }
+
+   .hero-img img {
+      width: 700px;
+   }
+
+   .hero-text a {
+      font-size: 25px;
+   }
+
+   .socmed-icons {
+      top: 55%;
+   }
+
+   .socmed-icons i {
+      margin: 30px 0px;
+      font-size: 30px;
+      padding: 12px 10px;
+   }
+
+   #toggleBtn {
+      font-size: 25px;
+   }
+
+   #profileCard {
+      height: max-content;
+   }
+}
+
+@media (max-width: 1200px) {
+   #hero {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+   }
+
+   .navlist a {
+      color: black;
+      margin-left: 0px;
+      font-size: 20px;
+      font-family: 'Single Day', cursive;
+      border-radius: 50px;
+      transition: all .55s ease;
+      padding: 0.5rem 1.5rem;
+   }
+
+   .hero-text h3 {
+      font-size: 30px;
+   }
+
+   .hero-text h1 {
+      font-size: 70px;
+      font-family: 'Single Day', cursive;
+   }
+
+   .hero-text p {
+      font-size: 20px;
+      font-weight: 700;
+      padding-bottom: 30px;
+   }
+
+   .hero-img img {
+      width: 500px;
+   }
+
+   .hero-text a {
+      font-size: 20px;
+   }
+
+   .cerita-1, .cerita-2, ce{
+      padding: 30px 0;
+   }
+
+   .cerita-2 {
+      flex-direction: column;
+   }
+
+   .image {
+      width: 400px;
+      height: auto;
+      padding: 0px 25px;
+   }
+
+   .socmed-icons i {
+      font-size: 30px;
+   }
+
+   footer .container {
+      flex-direction: column;
+   }
+
+   footer ul {
+      justify-content: flex-start;
+   }
+
+   footer .social-media {
+      justify-content: flex-end;
+   }
+}
+
+@media (max-width: 860px) {
+
+   #profileCard{
+      height: max-content;
+   }
+
+   #profileCard.shown {
+      right: 70px;
+   }
+
+   #toggleBtn {
+      right: 50px;
+   }
+
+   .hero-text {
+      padding-top: 0px;
+   }
+
+   .hero-text h3 {
+      font-size: 25px;
+   }
+
+   .hero-text h1 {
+      font-size: 50px;
+      font-family: 'Single Day', cursive;
+   }
+
+   .hero-text h1 span {
+      font-size: 50px;
+   }
+
+   .hero-text p {
+      font-size: 15px;
+      font-weight: 700;
+      padding-bottom: 30px;
+   }
+
+   .hero-img img {
+      width: 500px;
+   }
+
+   .hero-text a {
+      font-size: 20px;
+   }
+
+   #menu-icon {
+      display: block;
+   }
+
+   .navlist {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      width: 250px;
+      height: 40vh;
+      background: black;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 30px 20px;
+      transition: all .55s ease;
+      border-bottom-left-radius: 50px;
+   }
+
+   .navlist a {
+      display: block;
+      margin: 7px 0;
+      margin-left: 0;
+      color: gold;
+   }
+
+   .navlist.open {
+      right: 0;
+      height: 270%;
+   }
+
+   #profileCard.shown {
+      right: 40px;
+   }
+
+   #toggleBtn {
+      top: 400px;
+      right: 30px;
+   }
+
+   footer .container {
+      flex-direction: column;
+   }
+
+   footer ul {
+      justify-content: flex-start;
+   }
+
+   footer .social-media {
+      justify-content: flex-end;
+   }
+
+   #kontak {
+      padding: 100px 100px;
+   }
+}
+
+@media (max-width: 560px) {
+
+   section {
+      padding: 0 1%;
+   }
+
+   #profileCard {
+      height: max-content;
+   }
+   #profileCard.shown {
+      right: 30px;
+   }
+
+   #toggleBtn {
+      top: 400px;
+      right: 30px;
+   }
+
+   .hero-text h1 {
+      font-size: 70px;
+      font-family: 'Single Day', cursive;
+   }
+
+   .hero-text p {
+      font-size: 18px;
+   }
+
+   .hero-img {
+      width: 400px;
+      text-align: center;
+   }
+
+   .hero-img img {
+      width: 100%;
+      height: auto;
+   }
+
+   .hero-text a {
+      font-size: 15px;
+   }
+
+   #menu-icon {
+      display: block;
+   }
+
+   .navlist {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      width: 210px;
+      height: 40vh;
+      background: black;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 30px 20px;
+      transition: all .55s ease;
+      border-bottom-left-radius: 50px;
+   }
+
+   .navlist a {
+      display: block;
+      margin: 7px 0;
+      margin-left: 0;
+      color: gold;
+   }
+
+   .navlist.open {
+      right: 0;
+   }
+
+   footer .container {
+      flex-direction: column;
+   }
+
+   footer ul {
+      justify-content: flex-start;
+   }
+
+   footer .social-media {
+      justify-content: flex-end;
+   }
+
+   #kontak {
+      padding: 100px 50px;
+   }
+}
